@@ -1,13 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  margin: 0 auto;
+  font-family: 'Manrope', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  max-width: 1440px;
+  width: 100%;
+  background-color: var(--DarkBlue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h5 {
+  margin-bottom: 0;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+p {
+  margin: 0;
+}
+
+/* ## Colors */
+:root {
+/* ### Primary */
+--LightCyan: hsl(193, 38%, 86%);
+--NeonGreen: hsl(150, 100%, 66%);
+/* ### Neutral */
+--GrayishBlue: hsl(217, 19%, 38%);
+--DarkGrayishBlue: hsl(217, 19%, 24%);
+--DarkBlue: hsl(218, 23%, 16%);
+}
+
+.loading {
+  color: var(--LightCyan);
+  font-size: 32px;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--DarkGrayishBlue);
+  border: 1px solid --DarkGrayishBlue;
+  border-radius: 15px;
+  height: 330px;
+  justify-content: space-evenly;
+  width: 530px;
+}
+
+.id-text {
+  color: var(--NeonGreen);
+  letter-spacing: 4px;
+}
+
+.quote-text {
+  color: var(--LightCyan);
+  text-align: center;
+  font-size: 28px;
+  width: 415px;
+}
+
+.line {
+  padding-bottom: 20px;
+}
+
+.mobile-line {
+  display: none;
+}
+
+.icon {
+  border: solid;
+  width: 50px;
+  background-color: var(--NeonGreen);
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+  min-height: 60px;
+  width: 60px;
+  align-items: center;
+  margin-top: -33px;
+}
+
+.icon:hover {
+  cursor: pointer;
+  box-shadow: 0 0 25px #51ffa9, 0px 0px 0px 0px;
+
+}
+
+
+@media (max-width: 1440px) {
+  
+}
+
+
+@media (max-width: 390px) {
+  
+  html {
+    overflow: hidden;
+  }
+  
+  body {
+    /* background-color: aqua; */
+    overflow: hidden;
+    /* width: 375px; */
+  }
+
+  h5 {
+    font-size: 12px;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .mobile-line {
+    display: block;
+    padding-bottom: 20px;
+  }
+
+  .icon {
+    border: solid;
+    width: 50px;
+    background-color: var(--NeonGreen);
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    min-height: 50px;
+    width: 50px;
+    align-items: center;
+    margin-top: -27px;
+  }
+
+  .card-body {
+    width: 315px;
+    height: 275px;
+  }
+
+  .quote-text {
+    font-size: 21px;
+    width: 255px;
+  }
 }
