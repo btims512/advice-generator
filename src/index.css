@@ -104,10 +104,11 @@ p {
 @media (max-width: 600px) {
   .card-body {
     width: 90vw;
+    height: 368px;
   }
 
   .quote-text {
-    font-size: 21px;
+    font-size: 24px;
     width: 80vw;
   }
 
@@ -117,6 +118,11 @@ p {
 
   .mobile-line {
     display: block;
-    max-width: 90vw;
+    margin-bottom: 20px;
   }
+
+  .class-line > svg {
+    width: fit-content;
+  }
+
 }
