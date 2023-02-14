@@ -5,7 +5,6 @@ body {
   font-family: 'Manrope', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  max-width: 1440px;
   width: 100%;
   background-color: var(--DarkBlue);
   display: flex;
@@ -100,29 +99,16 @@ p {
 .icon:hover {
   cursor: pointer;
   box-shadow: 0 0 25px #51ffa9, 0px 0px 0px 0px;
-
 }
 
-
-@media (max-width: 1440px) {
-  
-}
-
-
-@media (max-width: 390px) {
-  
-  html {
-    overflow: hidden;
-  }
-  
-  body {
-    /* background-color: aqua; */
-    overflow: hidden;
-    /* width: 375px; */
+@media (max-width: 600px) {
+  .card-body {
+    width: 90vw;
   }
 
-  h5 {
-    font-size: 12px;
+  .quote-text {
+    font-size: 21px;
+    width: 80vw;
   }
 
   .line {
@@ -131,29 +117,6 @@ p {
 
   .mobile-line {
     display: block;
-    padding-bottom: 20px;
-  }
-
-  .icon {
-    border: solid;
-    width: 50px;
-    background-color: var(--NeonGreen);
-    display: flex;
-    justify-content: center;
-    border-radius: 50px;
-    min-height: 50px;
-    width: 50px;
-    align-items: center;
-    margin-top: -27px;
-  }
-
-  .card-body {
-    width: 315px;
-    height: 275px;
-  }
-
-  .quote-text {
-    font-size: 21px;
-    width: 255px;
+    max-width: 90vw;
   }
 }
